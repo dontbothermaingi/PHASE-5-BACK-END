@@ -65,7 +65,7 @@ class Product(db.Model, SerializerMixin):
     price = db.Column(db.Float, nullable=False)
     image_url = db.Column(db.String, nullable=False)
     quantity_available = db.Column(db.Integer, nullable=False)
-    type = db.Column(db.Integer, nullable=False)
+    type = db.Column(db.String, nullable=False)
 
     # Added seller_id to the Product model to establish a relationship with the Admin model, representing the seller of the product.
     seller_id = db.Column(db.Integer, db.ForeignKey('admins.id')) 
