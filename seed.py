@@ -22,8 +22,9 @@ def seed_data():
         phone4 = Product(name='OnePlus 9 Pro',pet='Dog', price=899, description='OnePlus 9 Pro, 256GB, Morning Mist', image_url='https://i.pinimg.com/564x/a2/c9/61/a2c9612d875b39b0d899598b67dc415d.jpg', quantity_available=90,type= 'product', seller_id=seller_id)
 
         
-        admin1 = Admin(username='MacBook Pro', email="jondoe@gmail.com", password=bcrypt.generate_password_hash('Applecider'), role='admin')
-        admin2 = Admin(username='Mac Bouy', email="markdoe@gmail.com", password=bcrypt.generate_password_hash('Applecider'), role='admin')
+        admin1 = Admin(username='MacBook Pro', email='jondoe@gmail.com', password=bcrypt.generate_password_hash('Applecider').decode('utf-8'), role='admin')
+        admin2 = Admin(username='Mac Bouy', email='markdoe@gmail.com', password=bcrypt.generate_password_hash('Applecider').decode('utf-8'), role='admin')
+
 
         
         admins = [admin1, admin2]

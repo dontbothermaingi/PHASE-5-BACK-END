@@ -13,11 +13,7 @@ class Admin(db.Model, SerializerMixin):
     username = db.Column(db.String, nullable=False, unique=True)
     email = db.Column(db.String, nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=False)
-    role = db.Column(db.String, nullable=False, default='admin')
-
-    products = relationship("Product", back_populates="seller")
-
-    serialize_rules = ('-products.seller')
+    role = db.Column(db.String, nullable=False, default='admin')  
 
     @validates('password')
     def validate_password(self, key, password):
@@ -74,8 +70,6 @@ class Product(db.Model, SerializerMixin):
     # Added seller_id to the Product model to establish a relationship with the Admin model, representing the seller of the product.
     seller_id = db.Column(db.Integer, db.ForeignKey('admins.id')) 
 
-    # Added a relationship attribute seller to the Product model to access the seller of the product.
-    seller = relationship("Admin", back_populates="products")
     product_order_items = relationship("ProductOrderItem", back_populates="product")
 
     serialize_rules = ('-product_order_items.product', '-seller.products.product_order_items')

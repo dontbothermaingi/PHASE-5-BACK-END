@@ -217,7 +217,7 @@ def get_and_update_admin_info_by_id(id):
         return jsonify(admin.to_dict()), 200
     
     if request.method == 'PATCH':
-        data = request.json7
+        data = request.json
 
         if not data:
             return jsonify({'error': 'No data provided for update'}), 401
@@ -247,7 +247,7 @@ def get_user_products():
         else:
             products = Product.query.all()
 
-        return jsonify({product.to_dict() for product in products}), 200
+        return jsonify([product.to_dict() for product in products]), 200
 
 @app.route('/userproducts/<int:id>', methods=['GET'])
 def get_products_by_id(id):
@@ -528,7 +528,7 @@ def get_post_update_and_delete_products():
     products = Product.query.all()
 
     if request.method == 'GET':
-        return jsonify({product.to_dict for product in products}), 200
+        return jsonify([product.to_dict for product in products]), 200
     
     if request.method == 'POST':
         data = request.json
