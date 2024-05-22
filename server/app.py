@@ -113,7 +113,7 @@ class UserLogin(Resource):
             "access_token": access_token
         }), 201
 
-api.add_resource(UserLogin, '/user/login')
+api.add_resource(UserLogin, '/userLogin')
 
 # Admin Login
 class AdminLogin(Resource):
@@ -142,7 +142,7 @@ class AdminLogin(Resource):
             "access_token": access_token
         }), 201
 
-api.add_resource(AdminLogin, '/admin/login')
+api.add_resource(AdminLogin, '/adminLogin')
 
 
 # User Logout
