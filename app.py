@@ -14,6 +14,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+# postgres://vetty_user:W1vbn9O2PVl9ZkBzecWGRgD3aMdSD1tf@dpg-cp6tm76v3ddc73fq83m0-a.oregon-postgres.render.com/vetty
+
 CORS(app)
 
 migrate = Migrate(app, db)
