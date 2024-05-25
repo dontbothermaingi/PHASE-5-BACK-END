@@ -18,3 +18,18 @@ Approve / Disapprove service requests
 Approve / Disapprove product orders.
 View a history of purchases made and services requested.
 
+#### User
+A user is one who is looking to get veterinary services.
+Auth (Login / Register)
+View all services provided in the shop
+View all products offered by the shop
+Add products to cart.
+Order a service
+View all cart items
+Checkout items from the cart
+Pay for services and products.
+
+### Technical expectations
+Backend: Flask Python
+Testing: ​Pytest
+Database: MySQL
