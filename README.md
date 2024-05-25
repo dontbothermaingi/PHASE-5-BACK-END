@@ -33,3 +33,31 @@ Pay for services and products.
 Backend: Flask Python
 Testing: ​Pytest
 Database: MySQL
+
+### Project Team
+- Denis Mutunga - Backend 
+
+-Ridhwan Mohamed - Backend
+
+-Julius Makari - Backend
+
+-Melissa Wanjiku - Frontend
+
+-Leila Abdi - Frontend
+
+-Joseph Wambui 3 - Frontend
+
+
+### Technologies Used
+Python, Flask, MySQL, Render. 
+
+### Setup Instructions
+Clone the repository to your local machine. Set up the backend server. Connect the frontend to the backend by configuring appropriate API endpoints. Run the application and start exploring pet products and services!
+
+### PETOPIA! For a satisfactory pet owner experience!
+
+### License
+#### Copyright (c) 2024 Denis Mutunga - Backend, Ridhwan Mohamed - Backend, Julius Makari - Backend, Melissa Wanjiku - Frontend, Leila Abdi - Frontend, Joseph Wambui - Frontend.
+
+
+#### !!Any contributions and recommendations are most welcome!!
