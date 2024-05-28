@@ -32,8 +32,9 @@ class User(db.Model, SerializerMixin):
     email = db.Column(db.String, nullable=False, unique=True)
     phone_number = db.Column(db.Integer, unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
-    confirm_password = db.Column(db.String(80), nullable=True)
+    
     role = db.Column(db.String, nullable=False, default='client')
+    confirm_password = db.Column(db.String(80), nullable=True)
 
     productorders = relationship("ProductOrder", back_populates="user")
     cart = relationship("Cart", uselist=False, back_populates="user")

@@ -34,8 +34,8 @@ def seed_data():
         product16 = Product(name='Cat bed',pet='Cat', price=899, description='Cat bed', image_url='https://i.pinimg.com/236x/4e/cf/f8/4ecff8e77909362a0e711e5eff5f219b.jpg', quantity_available=90,type= 'product', seller_id=seller_id)
         product17 = Product(name='Dog bed',pet='Dog', price=899, description='Dog bed', image_url='https://i.pinimg.com/236x/2c/b6/32/2cb632750c3d4df70c8be82fdfd6bfd6.jpg', quantity_available=90,type= 'product', seller_id=seller_id)
         
-        admin1 = Admin(username='MacBook Pro', email='jondoe@gmail.com', password=bcrypt.generate_password_hash('Applecider').decode('utf-8'), role='admin')
-        admin2 = Admin(username='Mac Bouy', email='markdoe@gmail.com', password=bcrypt.generate_password_hash('Applecider').decode('utf-8'), role='admin')
+        admin1 = Admin(username='Hen', email='kuku@gmail.com', password=bcrypt.generate_password_hash('kuku').decode('utf-8'), role='admin')
+        admin2 = Admin(username='Duck', email='bata@gmail.com', password=bcrypt.generate_password_hash('bata').decode('utf-8'), role='admin')
 
 
         
